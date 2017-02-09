@@ -37,7 +37,7 @@
 /* eslint-disable indent, no-unused-vars, no-multiple-empty-lines, max-nested-callbacks, space-before-function-paren, quotes, comma-spacing */
 'use strict';
 
-var precacheConfig = [["dist/aframe-master.js","8db728670008817804a62cfc7ac8f9db"],["dist/aframe-master.js.map","7f3d4d322c1b2b1485e3bbaf90c0343e"],["dist/aframe-master.min.js","d53b4e06d41fa5d5a5378cdf78e6780e"],["dist/aframe-master.min.js.map","33b2db6c432b8fe14b27a6afd7a336c4"],["dist/aframe-v0.4.0.js","83d53e5d23c7b7630dc2f91de65a329b"],["dist/aframe-v0.4.0.js.map","d79a13e9189b56daade2099cfba1d9ee"],["dist/aframe-v0.4.0.min.js","cfed2590db1a0eb96303dfc67a1ffe20"],["dist/aframe-v0.4.0.min.js.map","98f21e3342b6ca9fb1222badad629cf5"],["examples/index.html","ab9ae703f9a3b5f179da8c130fb1eb31"]];
+var precacheConfig = [["dist/aframe-master.js","8db728670008817804a62cfc7ac8f9db"],["dist/aframe-master.js.map","7f3d4d322c1b2b1485e3bbaf90c0343e"],["dist/aframe-master.min.js","d53b4e06d41fa5d5a5378cdf78e6780e"],["dist/aframe-master.min.js.map","33b2db6c432b8fe14b27a6afd7a336c4"],["dist/aframe-v0.4.0.js","83d53e5d23c7b7630dc2f91de65a329b"],["dist/aframe-v0.4.0.js.map","d79a13e9189b56daade2099cfba1d9ee"],["dist/aframe-v0.4.0.min.js","cfed2590db1a0eb96303dfc67a1ffe20"],["dist/aframe-v0.4.0.min.js.map","98f21e3342b6ca9fb1222badad629cf5"],["examples/index.html","f3c3b996ad50f99524e9817959e4cf1e"]];
 var cacheName = 'sw-precache-v2-sw-precache-' + (self.registration ? self.registration.scope : '');
 
 
