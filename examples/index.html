@@ -167,7 +167,7 @@
         <li><a href="https://github.com/aframevr">GitHub</a></li>
         <li><a href="https://aframevr-slack.herokuapp.com/">Slack</a></li>
         <li><a href="https://twitter.com/aframevr">Twitter</a></li>
-        <li><a href="uploader/">Upload Assets</a></li>
+        <li><a href="https://cdn.aframe.io">Asset Uploader</a></li>
       </ul>
     </header>
 
@@ -227,6 +227,11 @@
       <li><a href="test/pivot/">Pivot</a></li>
       <li><a href="test/raycaster/">Raycaster</a></li>
       <li><a href="test/shaders/">Shaders</a></li>
+      <li><a href="test/text/">Text</a></li>
+      <li><a href="test/text/anchors.html">Text Anchors</a></li>
+      <li><a href="test/text/msdf.html">Text Fonts (MSDF vs. SDF)</a></li>
+      <li><a href="test/text/scenarios.html">Text Scenarios</a></li>
+      <li><a href="test/text/sizes.html">Text Sizes</a></li>
       <li><a href="test/towers/">Towers</a></li>
       <li><a href="test/video/">Video</a></li>
       <li><a href="test/videosphere/">Video 360&deg;</a></li>
@@ -245,5 +250,34 @@
       <li><a href="primitives/ring/">Ring</a></li>
       <li><a href="primitives/torus/">Torus</a></li>
     </ul>
+    <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(reg) {
+          reg.onupdatefound = function() {
+            var installingWorker = reg.installing;
+
+            installingWorker.onstatechange = function() {
+              switch (installingWorker.state) {
+                case 'installed':
+                  if (navigator.serviceWorker.controller) {
+                    console.log('New or updated content is available.');
+                  } else {
+                    console.log('Content is now available offline!');
+                  }
+                  break;
+
+                case 'redundant':
+                  console.error('The installing service worker became redundant.');
+                  break;
+              }
+            };
+          };
+        }).catch(function(e) {
+          console.error('Error during service worker registration:', e);
+        });
+      });
+    }
+    </script>
   </body>
 </html>
